@@ -35,9 +35,6 @@ const Home = () => {
         setSelectedMealType={setSelectedMealType}
         mealType={mealType}
       />
-      {/* {recipes.map((recipe) => {
-        return <p>{recipe}</p>;
-      })} */}
 
       <Cards recipes={recipes}></Cards>
     </div>

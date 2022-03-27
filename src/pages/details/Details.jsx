@@ -9,7 +9,7 @@ const Details = () => {
       <CardDiv>
         <Img src={state.recipe.image} alt="" />
         <h3>{state.recipe.label}</h3>
-        <p>Country:{state.recipe.cuisineType[0]}</p>
+        <p>Region:{state.recipe.cuisineType[0]}</p>
       </CardDiv>
     </MainDiv>
   );
