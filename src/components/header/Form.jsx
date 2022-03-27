@@ -1,10 +1,11 @@
 import React from "react";
 import { FormContainer, Button, FoodInput, Select } from "./HeaderStyles";
 
-const Form = ({ mealType, setQuery, getData, setSelectedMealType }) => {
+const Form = ({ mealType, setQuery, getData, setSelectedMealType, query }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     getData();
+    setQuery("");
   };
 
   return (
@@ -13,6 +14,7 @@ const Form = ({ mealType, setQuery, getData, setSelectedMealType }) => {
         type="text"
         placeholder="search"
         onChange={(e) => setQuery(e.target.value)}
+        value={query}
       />
       <Button type="submit">Search</Button>
 

@@ -6,7 +6,7 @@ import Cards from "../../components/cards/cards";
 
 const Home = () => {
   const [query, setQuery] = useState("");
-  const [recipes, setRecipes] = useState("");
+  const [recipes, setRecipes] = useState([]);
   const mealType = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
   const [selectedMealType, setSelectedMealType] = useState(
     mealType[0].toLowerCase()
@@ -29,6 +29,7 @@ const Home = () => {
   return (
     <div>
       <Header
+        query={query}
         setQuery={setQuery}
         getData={getData}
         setSelectedMealType={setSelectedMealType}
@@ -38,7 +39,7 @@ const Home = () => {
         return <p>{recipe}</p>;
       })} */}
 
-      {/* <Cards recipes={recipes} setRecipes={setRecipes}></Cards> */}
+      <Cards recipes={recipes}></Cards>
     </div>
   );
 };

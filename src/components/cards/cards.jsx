@@ -1,6 +1,8 @@
 import { CardDiv, MainDiv } from "./CardStyles";
+import { useNavigate } from "react-router-dom";
 
-const Cards = ({ setRecipes, recipes }) => {
+const Cards = ({ recipes }) => {
+  const navigate = useNavigate;
   return (
     <MainDiv>
       {recipes.map((recipe) => {
@@ -14,10 +16,10 @@ const Cards = ({ setRecipes, recipes }) => {
                 boxShadow: "3px 3px 10px 3px black",
               }}
               src={recipe["recipe"]["image"]}
-              alt=""
+              alt="img"
             />
             <h3>{recipe["recipe"]["label"]}</h3>
-            <button>Details</button>
+            <button onClick={navigate("/details")}>Details</button>
           </CardDiv>
         );
       })}

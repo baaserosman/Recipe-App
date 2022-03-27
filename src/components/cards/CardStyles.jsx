@@ -23,7 +23,7 @@ export const CardDiv = styled.div`
   flex-direction: column;
   margin: 1rem;
   padding: 1rem;
-  height: 18rem;
+  height: 21rem;
   width: 15rem;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 3px black;
