@@ -1,4 +1,4 @@
-import { PDiv, Img, Span, Link } from "./AboutStyles";
+import { PDiv, Img, Span, Link, Header } from "./AboutStyles";
 
 const About = () => {
   return (
@@ -7,9 +7,9 @@ const About = () => {
         src="https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg"
         alt=""
       />
-      <h2>
+      <Header>
         About Software Developer <Span>BASCHER</Span>
-      </h2>
+      </Header>
 
       <PDiv>
         <p>

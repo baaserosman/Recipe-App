@@ -8,21 +8,30 @@ export const Img = styled.img`
 `;
 
 export const PDiv = styled.div`
-  text-align: center;
+  text-align: right;
   max-width: 500px;
   padding: 1rem;
   margin: 1rem auto;
   border-radius: 15px;
   box-shadow: 3px 3px 10px 3px white;
 `;
-
+export const Header = styled.h2`
+  font-family: "Girassol", sans-serif;
+  color: black;
+  font-style: oblique;
+  font-size: 1.5rem;
+`;
 export const Span = styled.span`
   color: white;
+  font-style: oblique;
   font-size: 1.5rem;
   font-weight: bold;
+  text-shadow: 2px 2px 2px black;
 `;
 
 export const Link = styled.a`
   text-decoration: none;
-  color: black;
+  color: white;
+  font-style: oblique;
+  font-size: 1.5rem;
 `;
