@@ -28,3 +28,10 @@ export const CardDiv = styled.div`
   border-radius: 15px;
   box-shadow: 3px 3px 10px 3px black;
 `;
+
+export const Img = styled.img`
+  height: 15rem;
+  width: 12rem;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px 3px black;
+`;

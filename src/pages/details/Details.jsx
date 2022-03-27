@@ -1,7 +1,18 @@
-import DetailStyles from "./DetailStyles";
+import DetailsStyles from "./DetailStyles";
+import { MainDiv, CardDiv, Img } from "../../components/cards/CardStyles";
+import { useLocation } from "react-router-dom";
 
 const Details = () => {
-  return <div>Details</div>;
+  const { state } = useLocation();
+  console.log(state);
+  return (
+    <MainDiv>
+      <CardDiv>
+        <Img src={state.recipe.image} alt="" />
+        <h3>{state.recipe.label}</h3>
+      </CardDiv>
+    </MainDiv>
+  );
 };
 
 export default Details;
