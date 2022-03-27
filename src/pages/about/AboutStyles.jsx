@@ -4,16 +4,17 @@ export const Img = styled.img`
   margin-top: 3rem;
   max-width: 400px;
   border-radius: 15px;
-  box-shadow: 3px 3px 10px 3px white;
+  box-shadow: 3px 3px 10px 3px gray;
 `;
 
 export const PDiv = styled.div`
+  margin: 1rem;
   text-align: right;
   max-width: 500px;
   padding: 1rem;
   margin: 1rem auto;
   border-radius: 15px;
-  box-shadow: 3px 3px 10px 3px white;
+  box-shadow: 3px 3px 10px 3px gray;
 `;
 export const Header = styled.h2`
   font-family: "Girassol", sans-serif;
