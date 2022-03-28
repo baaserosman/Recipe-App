@@ -4,7 +4,7 @@ export const Img = styled.img`
   margin-top: 3rem;
   max-width: 400px;
   border-radius: 15px;
-  box-shadow: 3px 3px 10px 3px gray;
+  box-shadow: 3px 3px 20px 5px black;
 `;
 
 export const PDiv = styled.div`
@@ -14,7 +14,7 @@ export const PDiv = styled.div`
   padding: 1rem;
   margin: 1rem auto;
   border-radius: 15px;
-  box-shadow: 3px 3px 10px 3px gray;
+  box-shadow: 3px 3px 20px 5px black;
 `;
 export const Header = styled.h2`
   font-family: "Girassol", sans-serif;
